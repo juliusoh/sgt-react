@@ -10,8 +10,8 @@ function GradeTable(props) {
   });
 
   return (
-    <table className='table table-bordered table-hover table-info col-8'>
-      <thead className='light'>
+    <table className='table table-bordered table-hover table-striped col-8'>
+      <thead className='thead-dark'>
         <tr>
           <th scope='col'>Name</th>
           <th scope='col'>Course</th>
