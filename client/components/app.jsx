@@ -6,6 +6,20 @@ class App extends React.Component {
     this.state = {
       grades: []
     };
+
+  }
+
+  componentDidMount() {
+    this.userViewGrades();
+  }
+
+  userViewGrades() {
+    fetch('/api/grades')
+      .then(response => response.json())
+      .then(data => {
+        this.setState({ grades: data });
+      })
+      .catch(error => console.error(error));
   }
 
   render() {
