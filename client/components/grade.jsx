@@ -1,11 +1,12 @@
 import React from 'react';
 
 function Grade(props) {
+  const { grade: { course, grade, name } } = props;
   return (
     <tr>
-      <th scope='row'>{props.grade.name}</th>
-      <td>{props.grade.course}</td>
-      <td>{props.grade.grade}</td>
+      <th scope='row'>{name}</th>
+      <td>{course}</td>
+      <td>{grade}</td>
     </tr>
   );
 }
