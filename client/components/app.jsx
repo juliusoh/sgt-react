@@ -9,7 +9,7 @@ class App extends React.Component {
       grades: []
     };
     this.getAverageGrade = this.getAverageGrade.bind(this);
-
+    this.userAddGrade = this.userAddGrade.bind(this);
   }
 
   componentDidMount() {
@@ -46,7 +46,7 @@ class App extends React.Component {
         const { grades } = this.state;
         const newGrades = [...grades];
         newGrades.push(data);
-        this.setState({ grades });
+        this.setState({ grades: newGrades });
       })
       .catch(error => console.error(error));
   }
