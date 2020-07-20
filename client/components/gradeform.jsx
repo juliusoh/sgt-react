@@ -10,6 +10,7 @@ export default class GradeForm extends React.Component {
     };
     this.handleFieldChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.clearInput = this.clearInput.bind(this);
   }
 
   handleInputChange(event) {
@@ -23,7 +24,22 @@ export default class GradeForm extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
+    this.props.addNewStudent(this.state);
+    this.setState({
+      name: '',
+      course: '',
+      grade: ''
+    });
+  }
 
+  clearInput(event) {
+    event.preventDefault();
+    const reset = {
+      name: '',
+      course: '',
+      grade: ''
+    };
+    this.setState(reset);
   }
 
 }
