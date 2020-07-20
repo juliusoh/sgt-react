@@ -39,7 +39,7 @@ class App extends React.Component {
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ grade })
+      body: JSON.stringify(grade)
     }).then(response => {
       return response.json();
     })
