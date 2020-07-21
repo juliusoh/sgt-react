@@ -1,28 +1,22 @@
 {
   "grades": [
     {
-      "id": 5,
-      "name": "Kyle Simpson",
-      "course": "JavaScript",
-      "grade": 100
-    },
-    {
-      "id": 12,
-      "name": "Brendan Eich",
-      "course": "JavaScript",
-      "grade": 100
-    },
-    {
-      "id": 32,
-      "name": "Douglas Crockford",
-      "course": "JavaScript",
-      "grade": 100
-    },
-    {
       "name": "julius oh",
       "course": "math",
       "grade": 1,
       "id": 33
+    },
+    {
+      "name": "tim davis",
+      "course": "life",
+      "grade": 100,
+      "id": 34
+    },
+    {
+      "name": "donald trump",
+      "course": "politics ",
+      "grade": 0,
+      "id": 35
     }
   ]
 }
