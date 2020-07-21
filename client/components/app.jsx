@@ -30,7 +30,7 @@ class App extends React.Component {
   getAverageGrade() {
     const { grades } = this.state;
     const sum = grades.reduce((sum, grade) => sum + grade.grade, 0);
-    const avg = (sum / grades.length) || 0;
+    const avg = Math.round((sum / grades.length)) || 0;
     return avg;
   }
 
